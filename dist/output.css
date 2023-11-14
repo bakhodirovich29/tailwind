@@ -622,6 +622,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -640,14 +644,6 @@ video {
 
 .h-5 {
   height: 1.25rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.max-h-full {
-  max-height: 100%;
 }
 
 .w-5 {
@@ -678,18 +674,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-16 {
-  gap: 4rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-lg {
@@ -719,26 +709,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/hero-bg\.png\'\)\] {
-  background-image: url('/img/hero-bg.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/hero-bg\.png\'\)\] {
-  background-image: url('../img/hero-bg.png');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .fill-slate-300 {
   fill: #cbd5e1;
 }
@@ -755,9 +725,19 @@ video {
   padding: 1.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-3 {
@@ -792,10 +772,6 @@ video {
 
 .font-light {
   font-weight: 300;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .text-white {
@@ -853,42 +829,6 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
-  .xl\:container {
-    width: 100%;
-  }
-
-  @media (min-width: 640px) {
-    .xl\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .xl\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .xl\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .xl\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .xl\:container {
-      max-width: 1536px;
-    }
-  }
-}
-
 .placeholder\:text-slate-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -930,6 +870,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -939,5 +883,9 @@ video {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
